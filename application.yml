@@ -1,7 +1,7 @@
 eureka:
-  instance:
-    hostname: registry
-    prefer-ip-address: true
+#  instance:
+#    hostname: registry
+#    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@eureka1:8761/eureka/,http://user:${REGISTRY_SERVER_PASSWORD:password}@eureka2:8761/eureka/
