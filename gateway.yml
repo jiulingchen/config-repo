@@ -1,0 +1,22 @@
+#Server
+server:
+  port: 7291
+management:
+  security:
+    enabled: false
+  port: 10211
+  context-path: /fb83deee-dd46-472b-99a9-f0ebffe20d0e
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
